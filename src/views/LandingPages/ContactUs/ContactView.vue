@@ -2,8 +2,8 @@
 import { onMounted } from "vue";
 
 //example components
-import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
-import DefaultFooter from "@/examples/footers/FooterDefault.vue";
+import DefaultNavbar from "@/examples/navbars/MainNavbar.vue";
+import DefaultFooter from "@/examples/footers/MainFooter.vue";
 
 //image
 import image from "@/assets/img/illustrations/illustration-signin.jpg";
@@ -23,14 +23,7 @@ onMounted(() => {
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <DefaultNavbar
-          :sticky="true"
-          :action="{
-            route: 'https://www.creative-tim.com/product/vue-material-kit-pro',
-            color: 'bg-gradient-success',
-            label: 'Buy Now',
-          }"
-        />
+        <DefaultNavbar :sticky="true" />
       </div>
     </div>
   </div>
@@ -67,8 +60,8 @@ onMounted(() => {
               </div>
               <div class="card-body">
                 <p class="pb-3">
-                  For further questions, including partnership opportunities,
-                  please email hello@creative-tim.com or contact using our
+                  For further questions or if you'd like to schedule a
+                  consultation, email karenjbrock@gmail.com or contact using our
                   contact form.
                 </p>
                 <form id="contact-form" method="post" autocomplete="off">
@@ -87,7 +80,7 @@ onMounted(() => {
                           class="input-group-static mb-4"
                           type="email"
                           label="Email"
-                          placeholder="hello@creative-tim.com"
+                          placeholder="example@example.com"
                         />
                       </div>
                     </div>
@@ -97,7 +90,7 @@ onMounted(() => {
                         class="input-group-static mb-4"
                         :rows="6"
                         placeholder="Describe your problem in at least 250 characters"
-                        >How can we help you?</MaterialTextArea
+                        >How can I help you?</MaterialTextArea
                       >
                     </div>
                     <div class="row">

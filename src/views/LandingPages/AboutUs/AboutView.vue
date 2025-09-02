@@ -2,8 +2,8 @@
 import { onMounted, onUnmounted } from "vue";
 
 //example components
-import DefaultNavbar from "../../../examples/navbars/NavbarDefault.vue";
-import DefaultFooter from "../../../examples/footers/FooterDefault.vue";
+import DefaultNavbar from "../../../examples/navbars/MainNavbar.vue";
+import DefaultFooter from "../../../examples/footers/MainFooter.vue";
 
 //image
 import bg0 from "@/assets/img/bg9.jpg";
@@ -42,14 +42,20 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <DefaultNavbar
-    :action="{
-      route: 'javascript:;',
-      label: 'Buy Now',
-      color: 'btn-white',
-    }"
-    transparent
-  />
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <DefaultNavbar
+          :action="{
+            route: 'contact',
+            label: 'Contact',
+            color: 'btn-dark',
+          }"
+          :sticky="true"
+        />
+      </div>
+    </div>
+  </div>
   <header class="bg-gradient-dark">
     <div
       class="page-header min-vh-75"

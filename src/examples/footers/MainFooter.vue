@@ -7,7 +7,7 @@ defineProps({
     logo: String,
     route: "",
     default: () => ({
-      name: "Material Kit 2",
+      name: "Karen J Brock, PhD",
       logo: logoDark,
       route: "/",
     }),
@@ -77,6 +77,10 @@ defineProps({
           {
             name: "affiliate program",
             href: "https://www.creative-tim.com/affiliates/new",
+          },
+          {
+            name: "site theme",
+            href: "https://www.creative-tim.com/product/vue-material-kit",
           },
         ],
       },
@@ -171,10 +175,7 @@ defineProps({
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright ©
               {{ new Date().getFullYear() }}
-              Material Kit by
-              <a href="https://www.creative-tim.com" target="_blank"
-                >Creative Tim</a
-              >.
+              Brock & Associates
             </p>
           </div>
         </div>
